@@ -1,0 +1,214 @@
+/* Reset margins and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set body styling */
+body {
+    font-family: 'Netflix Sans', sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* Customize scrollbar appearance */
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #111;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Navbar styling */
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    transition: background-color 0.5s ease-in;
+}
+
+.nav.active {
+    background-color: #111;
+}
+
+.nav__left {
+    margin-left: 10px;
+}
+
+.nav__logo {
+    width: 180px;
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+}
+
+/* Avatar styling */
+.nav__avatar {
+    width: 50px;
+}
+
+/* Banner styling */
+#banner {
+    color: white;
+    object-fit: contain;
+    height: 644px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+#banner__contents {
+    margin-left: 70px;
+    padding-top: 340px;
+    height: 190px;
+}
+
+#banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+}
+
+#banner__description {
+    width: 100%;
+    max-width: 100%;
+    line-height: 1.5;
+    padding-top: 1rem;
+    padding: 10px;
+    overflow: hidden;
+    white-space:normal;
+    text-overflow: ellipsis;
+    font-size: 0.9rem;
+    height: 80px;
+    display:flex;
+    overflow-y: auto;
+}
+
+#banner__button {
+    cursor: pointer;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 0.2vw;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    background-color: rgba(51, 51, 51, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+#banner__button:hover {
+    color: black;
+    background-color: #e6e6e6;
+}
+
+#banner__fadeBottom {
+    height: 7.4rem;
+    background: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37, 0.61),
+        #111
+    );
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Row styling */
+.row {
+    margin-left: 20px;
+    color: white;
+}
+
+.row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__poster {
+    object-fit: contain;
+    width: 100%;
+    max-height: 120px;
+    margin-right: 10px;
+    transition: transform 500ms;
+}
+
+.row__posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row__poster:hover {
+    transform: scale(1.08);
+}
+
+/* Larger poster variants */
+.row__posterLarge,
+.row__posterLarge1,
+.row__posterLarge2 {
+    object-fit: contain;
+    width: 100%;
+    max-height: 250px;
+    margin-right: 10px;
+    transition: transform 500ms;
+}
+
+.row__posterLarge:hover,
+.row__posterLarge1:hover,
+.row__posterLarge2:hover {
+    transform: scale(1.09);
+    opacity: 1;
+}
+header{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    scroll-behavior: smooth;
+    display: flex;
+    
+}
+.logo{
+    color: red;
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 30px;
+    font-family: bebas neue ,bold;
+    font-size:x-large;
+    background-blend-mode: color-burn;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+.list li{
+    letter-spacing: 0.1rem;
+   flex: 0 1 auto;
+   padding: 16px;
+   height: 70px;
+   color:aliceblue;
+   font-size: medium;
+   display: flex;
+}
